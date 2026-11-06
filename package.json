@@ -1,0 +1,28 @@
+{
+  "name": "pi-agent-notify",
+  "version": "0.1.0",
+  "description": "Linux desktop notifications and audio for Pi agent run endings",
+  "type": "module",
+  "private": true,
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateoGreil/pi-agent-notify.git"
+  },
+  "keywords": ["pi-package"],
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --experimental-test-module-mocks --test tests/*.test.mjs"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "1.5.0"
+  },
+  "engines": {
+    "node": ">=22.22.0"
+  }
+}
